@@ -1,0 +1,16 @@
+section h1,
+section p {
+    font-family: Consolas;
+    color: #0094ff;
+    margin-top: 5px;
+}
+
+@font-face {
+    font-family: Edwardian;
+    src: url("./edwardian-script-itc/ITCEDSCR.TTF");
+}
+
+section h1 p::first-letter {
+    font-family: Edwardian;
+    font-size: 50px;
+}
