@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bouncing Ball</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        canvas {
+            border: 3px solid black;
+            position: absolute;
+        }
+        
+        #first-canvas {
+            z-index: 10;
+        }
+        
+        #second-canvas {
+            z-index: 5;
+        }
+        
+        body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="first-canvas" width="800" height="600">Your browser does not support canvas</canvas>
+    <canvas id="second-canvas" width="800" height="600">Your browser does not support canvas</canvas>
+    <script src="./bouncing-ball.js"></script>
+</body>
+
+</html>

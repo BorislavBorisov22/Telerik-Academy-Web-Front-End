@@ -1,0 +1,33 @@
+body {
+    overflow: hidden;
+    text-align: center;
+    background-color: cadetblue;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: greenyellow;
+}
+
+.sprite-image {
+    display: none;
+}
+
+canvas {
+    position: absolute;
+    left: 150px;
+    top: 80px;
+    border-radius: 10px;
+}
+
+#sonic-canvas {
+    z-index: 10;
+}
+
+#fireball-canvas {
+    z-index: 5;
+}
+
+#background-canvas {
+    z-index: 1;
+}

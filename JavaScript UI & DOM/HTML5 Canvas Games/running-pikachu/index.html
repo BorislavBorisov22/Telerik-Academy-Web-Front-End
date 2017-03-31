@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pikachu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./start.css" rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="background-canvas">Your browser does not support canvas</canvas>
+    <canvas id="player-canvas">Your browser does not suppor canvas</canvas>
+    <canvas id="pokeball-canvas">Your browser does not suppor canvas</canvas>
+    <span id="highscore">Ebanie</span>
+    <audio id="pokemon-song" src="./audio/Pokémon Theme Song (Music Video).mp3" hidden>
+    Your browser does not support html5 audio
+    </audio>
+    <img src="./imgs/city_background_night.png" id="background-sprite" class="sprite-image">
+    <img src="./imgs/pikachu-running.png" id="pikachu-sprite" class="sprite-image">
+    <img src="./imgs/pokeball-rolling.png" id="pokeball-sprite" class="sprite-image">
+    <img src="./imgs/dead.png" id="dead-player" class="sprite-image">
+    <img src="./imgs/pikachu-jumping.png" id="jumping-sprite" class="sprite-image">
+    <!--<script src="./sprite.js"></script>-->
+    <script src="./sprite.js"></script>
+    <script src="./physical-body.js"></script>
+    <script src="./background.js"></script>
+    <script src="./start.js"></script>
+</body>
+
+</html>
