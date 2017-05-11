@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-sm-5">
+        <h2>Add TODO to list</h2>
+    </div>
+</div>
+<form id="add-todo-form">
+    <div class="row">
+        <div class="col-sm-10">
+            <label for="tb-todo-text">Text</label>
+            <input type="text" class="form-control" id="tb-todo-text" placeholder="TODO Text" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-10">
+            <div class="form-group">
+                <label for="sel1">Select TODO state:</label>
+                <select class="form-control" id="tb-todo-state">
+                    <option>false</option>
+                    <option>true</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-10">
+            <label for="tb-todo-category">Category</label>
+            <input type="text" class="form-control" id="tb-todo-category" placeholder="Category" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <input type="submit" id="btn-add-todo" class="btn btn-primary btn-md" value="Add">
+        </div>
+    </div>
+</form>

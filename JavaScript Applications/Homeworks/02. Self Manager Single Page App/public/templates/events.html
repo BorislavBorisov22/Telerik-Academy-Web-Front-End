@@ -1,0 +1,17 @@
+<div id="events-container" class="row">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>Your Events List:</h1>
+            <a class="btn btn-success" href="#/events/add">Add Event</a>
+        </div>
+    </div>
+    {{#if this.result.length}} {{#each this.result}}
+    <div class="row event">
+        <h3>Title: {{title}}</h3>
+        <p>{{description}}</p>
+        <p>Posted on <span class="text-success">{{date}}</span> by <span class="text-primary">{{creator}}</span></p>
+    </div>
+    {{/each}} {{else}}
+    <h3 class="text-danger">No Recently Added Events</h3>
+    {{/if}}
+</div>

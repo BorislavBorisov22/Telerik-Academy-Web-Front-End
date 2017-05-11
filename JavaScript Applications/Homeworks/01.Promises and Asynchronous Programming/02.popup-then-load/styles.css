@@ -1,0 +1,15 @@
+div {
+    position: absolute;
+    left: 450px;
+    top: 2px;
+    border: 1px solid black;
+    padding: 10px;
+    color: white;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: Consolas;
+    text-align: center;
+    background-color: red;
+    display: none;
+}

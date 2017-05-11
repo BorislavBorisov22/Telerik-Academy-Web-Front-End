@@ -1,0 +1,7 @@
+.hidden {
+    display: none;
+}
+
+#go-to-login {
+    float: right;
+}

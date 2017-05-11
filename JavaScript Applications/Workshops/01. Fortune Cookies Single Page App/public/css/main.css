@@ -1,0 +1,21 @@
+#login-reg-success {
+    position: absolute;
+    top: 10px;
+    left: 400px;
+    width: 350px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#btn-add-cookie {
+    position: relative;
+    right: 100px;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}

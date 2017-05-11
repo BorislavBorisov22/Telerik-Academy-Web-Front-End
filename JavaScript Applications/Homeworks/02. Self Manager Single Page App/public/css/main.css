@@ -1,0 +1,25 @@
+.hidden {
+    display: none;
+}
+
+#self-manager-img {
+    width: 70%;
+    height: 70%;
+}
+
+#todo-container,
+#events-container,
+#add-event-container {
+    text-align: center;
+}
+
+.todo,
+.event {
+    padding: 5px;
+    margin: 10px;
+    background-color: lightgray;
+}
+
+ul {
+    list-style-type: none;
+}

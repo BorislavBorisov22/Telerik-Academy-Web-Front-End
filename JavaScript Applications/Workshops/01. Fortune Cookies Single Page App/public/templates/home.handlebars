@@ -1,0 +1,19 @@
+ <h1 class="text-success text-center">Shared Cookies</h1>
+ {{#each this}}
+<div class="shared-cookie border text-left">
+    <h3>{{text}}</h3>
+    <h5>Category: <a href="#/home/{{category}}">{{category}}</a></h5>
+    <div class="row">
+    <img class="img-rounded" src="{{img}}" />
+    </div>
+    <div class="row">
+        <div class="col-sm-offest-10 col-sm-10">
+            <a href="#/cookies/{{id}}/like" class="glyphicon glyphicon-thumbs-up btn-rating"></a><span id="likes-count">{{likes}}</span>
+            <a href="#/cookies/{{id}}/dislike" class="glyphicon glyphicon-thumbs-down btn-rating"></a><span id="dislikes-count">{{dislikes}}</span>
+        </div>
+    </div>
+    <div class="row">
+        <span class="col-sm-5" id="shared-on">Shared on: {{shareDate}}</span>
+    </div>
+</div>
+{{/each}}

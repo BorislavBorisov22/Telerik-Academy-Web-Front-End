@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Self manager</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./libs/toastr/build/toastr.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#/home">Self Manager</a>
+            </div>
+
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#/home">Home</a></li>
+                    <li class="hidden" id="go-to-todo-list"><a href="#/todos">TODO Tasks</a></li>
+                    <li class="hidden" id="go-to-events-list"><a href="#/events">Events</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden" id="user-info">
+                        <a href="#/user/info"></a>
+                    </li>
+                    <li id="go-to-logout" class="hidden">
+                        <a href="#/logout">Logout</a>
+                    </li>
+                    <li class="hidden" id="go-to-login"><a href="#/login">Login/Register</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="container">
+
+    </main>
+
+    <!--External libraries -->
+    <scrip src="./libs/crypto-js/crypto-js.js"></scrip>
+    <script src="./libs/jquery/dist/jquery.js"></script>
+    <script src="./libs/sammy/lib/sammy.js"></script>
+    <script src="./libs/handlebars/dist/handlebars.js"></script>
+    <script src="./libs/toastr/toastr.js"></script>
+
+    <!--SystemJS configs -->
+    <script src="./libs/systemjs/dist/system.js"></script>
+    <script src="./js/configurations/systemjs.configs.js"></script>
+    <script>
+        System.import('main');
+    </script>
+</body>
+
+</html>

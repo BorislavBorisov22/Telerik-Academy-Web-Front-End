@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Crowd Share</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./bower_components/toastr/toastr.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="col-sm-4">
+                <h1>Crowd Share, Brat :)</h1>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/home">Crowd Share</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#/home">Home</a></li>
+                    <li><a id="btn-add-post" href="#/posts/add">Add Post</a></li>
+                    <li>
+                        <a class="navbar-right" href="#/login" id="login">Login/Register</a>
+                        <a class="navbar-right hidden" href="#/logout" id="logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="content">
+    </div>
+
+    <!--External libraries -->
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/sammy/lib/sammy.js"></script>
+    <script src="./bower_components/crypto-js/crypto-js.js"></script>
+    <script src="./node_modules/systemjs/dist//system.js"></script>
+    <script src="./bower_components/handlebars/handlebars.js"></script>
+    <script src="./bower_components/toastr/toastr.js"></script>
+
+    <!-- Applications scripts -->
+    <script>
+        SystemJS.config({
+            // tell SystemJS which transpiler to use
+            transpiler: 'plugin-babel',
+            // tell SystemJS where to look for the dependencies
+            map: {
+                'plugin-babel': './node_modules/systemjs-plugin-babel/plugin-babel.js',
+                'systemjs-babel-build': './node_modules/systemjs-plugin-babel/systemjs-babel-browser.js',
+                // app start script
+                'main': './js/main.js',
+                'requester': './js/requester.js',
+                'data': './js/data.js',
+                'controllers': './js/controllers.js',
+                'template-loader': './js/template-loader.js'
+            }
+        });
+    </script>
+    <script>
+        SystemJS.import('main');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<div id="todo-container" class="row">
+    <div class="col-sm-12">
+        <h1>You TODO Tasks</h1>
+        <a class="btn btn-primary" href="#/todos/add">Add TODO</a> {{#if result}}
+        <ul class="list-group">
+            {{#each result}}
+            <li class="todo">
+                <p>{{text}}</p>
+                <p>State:
+                    <a href="#/todos/state/{{id}}">{{state}}</a>
+                </p>
+                <p>
+                    Category:<a href="#/todos/category/{{cateogry}}">{{category}}</a>
+                </p>
+                <p>
+                    <a class="btn btn-success btn-xs" href="#/todos/update?state={{state}}&amp;id={{id}}">Change State</a>
+                </p>
+            </li>
+            {{/each}}
+        </ul>
+        {{else}}
+        <h3 class="text-danger">You do not have any current TODOs in the list</h3>
+        {{/if}}
+    </div>
+</div>
