@@ -1,0 +1,14 @@
+extends ../shared/_master
+
+block body
+    h1
+        | Add your post here
+        form(action="/posts" method="POST")
+            span
+                | Title
+            input(type='text' class="form-control" placeholder="post title" name="title")
+            span
+                | Text
+            input(type='text' class="form-control" placeholder="post text" name="text")
+            button(class="btn btn-success")
+                | Add post

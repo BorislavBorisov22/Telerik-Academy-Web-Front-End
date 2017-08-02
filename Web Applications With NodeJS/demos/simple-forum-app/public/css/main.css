@@ -1,0 +1,27 @@
+body {
+    background: url("https://s-media-cache-ak0.pinimg.com/736x/54/7a/9c/547a9cc6b93e10261f1dd8a8af474e03--wolves-art-digital-illustration.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    color: purple;
+}
+
+.posts {
+    text-align: left;
+}
+
+.post-details {
+    text-align: left;
+}
+
+h1 {
+    color: brown;
+}
+
+span {
+    color: purple;
+}
+
+.posted-on {
+    float: right;
+}

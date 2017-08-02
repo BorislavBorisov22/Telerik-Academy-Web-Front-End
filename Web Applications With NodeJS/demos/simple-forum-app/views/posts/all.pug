@@ -1,0 +1,12 @@
+extends ../shared/_master
+
+block body
+    h1 
+        | Forum Posts
+    ul(class="list-group posts")
+        each post in model
+            li(class="list-group-item")
+                a(href="./posts/" + post.id)
+                    | #{post.title}
+                span(class="posted-on")
+                    | #{post.postedOn.getUTCDate() + '.' + (post.postedOn.getUTCMonth() + 1) + '.' + post.postedOn.getUTCFullYear()}

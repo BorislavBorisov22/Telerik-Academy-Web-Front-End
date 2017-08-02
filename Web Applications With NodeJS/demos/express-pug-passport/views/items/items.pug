@@ -1,0 +1,16 @@
+extends ../shared/_master
+
+block scripts
+    script(src='/static/js/test.js')
+
+block body
+    h1 
+        | Items
+    ul
+        each item in model
+            li
+                a(href='/items/' + item.id)
+                    | Name: #{item.name}, Id: #{item.id}
+    p 
+        a(href='/items/form')
+            | Add item
